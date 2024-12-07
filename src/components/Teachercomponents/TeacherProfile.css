@@ -1,0 +1,65 @@
+/* DashboardDetails.css */
+
+.dashboard-details-container {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 600px;
+    background: linear-gradient(135deg, #44494d, #4c5657);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.dashboard-details-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-details-container p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #e0f7fa;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.dashboard-details-container p strong {
+    color: #ffffff;
+}
+
+.dashboard-details-container .action-buttons {
+    margin-top: 20px;
+}
+
+.dashboard-details-container .btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #353a3e;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboard-details-container .btn:hover {
+    background: #f1f1f1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-details-container .btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

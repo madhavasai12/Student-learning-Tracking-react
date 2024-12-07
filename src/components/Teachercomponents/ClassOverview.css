@@ -1,0 +1,66 @@
+.class-overview-container {
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 students per row */
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.student-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-card p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.progress-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #07090c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.progress-button:hover {
+  background-color: #155ab2;
+}
+
+.pagination-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-buttons button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-buttons span {
+  font-size: 1rem;
+}

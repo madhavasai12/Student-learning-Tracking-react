@@ -1,0 +1,71 @@
+.resource-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Reduced gap between fields */
+  margin-bottom: 20px;
+}
+
+.resource-form input,
+.resource-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.resource-form input:focus,
+.resource-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Add Resource button styles */
+.add-btn,
+.pagination-button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-btn:hover,
+.pagination-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.pagination-button:disabled {
+  background-color: #d3d3d3; /* Grey when disabled */
+  cursor: not-allowed;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.pagination-button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  background-color: #337fca !important;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resource-form button {
+  padding: 10px 20px;
+  background-color: #080909;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+

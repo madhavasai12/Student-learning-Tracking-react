@@ -1,0 +1,28 @@
+/* Navbar link styles */
+.navbar .nav-links a {
+    display: flex;
+    align-items: center; /* Align icons and text */
+    text-decoration: none;
+    color: #f4f6f9;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+    padding: 0.2rem 0;
+}
+
+/* Space between icon and text */
+.navbar .nav-links a i,
+.navbar .nav-links a svg {
+    margin-right: 0.5rem; /* Adjust space between icon and text */
+}
+
+/* Hover effect */
+.navbar .nav-links a:hover {
+    color: #d2e3fc;
+}
+
+/* Adjust logout button */
+.navbar .nav-links .logout {
+    color: red;
+    font-weight: bold;
+    margin-left: 1.5rem; 
+}

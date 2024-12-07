@@ -1,0 +1,112 @@
+.courses-container {
+  max-width: 1600px;
+  margin: 20px auto; /* Keeps space around the container */
+  padding: 20px 40px; /* Maintains spacing within the container */
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  .courses-container h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .no-resources {
+    color: #888;
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .resources-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for wide layout */
+    gap: 20px;
+    justify-content: center;
+    overflow-y: auto; /* Allows scrolling */
+    max-height: 400px; /* Reduced the height of the container */
+    padding-right: 10px; /* Prevent scrollbar overlap */
+  }
+  
+  @media (max-width: 1024px) {
+    .resources-grid {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .resources-grid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  }
+  
+  .resource-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 270px; /* Keeps card height consistent */
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resource-card h2 {
+    color: #0d1012;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+  }
+  
+  .resource-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+    word-wrap: break-word;
+  }
+  
+  .resource-card a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .resource-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .pagination-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #005bb5;
+  }
+  

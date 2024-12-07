@@ -1,0 +1,28 @@
+.progress-container {
+    padding: 20px;
+}
+
+.progress-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.progress-table th,
+.progress-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.progress-table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+.progress-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.progress-table tr:hover {
+    background-color: #f1f1f1;
+}
