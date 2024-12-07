@@ -22,7 +22,7 @@ const StudentQueries = () => {
 
     const fetchQueries = async (email) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/queries/student?email=${email}`);
+            const response = await fetch(`https://learningtrackingsystem.up.railway.app/api/queries/student?email=${email}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch queries.');
             }
@@ -39,7 +39,7 @@ const StudentQueries = () => {
         e.preventDefault();
         try {
             const askedAt = new Date().toISOString();
-            const response = await fetch('http://localhost:8080/api/queries/submit', {
+            const response = await fetch('https://learningtrackingsystem.up.railway.app/api/queries/submit', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
