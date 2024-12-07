@@ -21,7 +21,7 @@ const StudentProgress = () => {
 
     const fetchAssignments = async (email) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/assignments/submissions?email=${email}`);
+            const response = await fetch(`https://learningtrackingsystem.up.railway.app/api/assignments/submissions?email=${email}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch assignments.');
             }
