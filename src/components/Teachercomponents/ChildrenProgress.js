@@ -11,7 +11,7 @@ const ChildrenProgress = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/api/assignments/submissions?email=${email}`)
+      .get(`https://learningtrackingsystem.up.railway.app/api/assignments/submissions?email=${email}`)
       .then((response) => setAssignments(response.data))
       .catch((error) => console.error("Error fetching assignments:", error));
   }, [email]);
@@ -28,7 +28,7 @@ const ChildrenProgress = () => {
     }
 
     axios
-      .post(`http://localhost:8080/api/assignments/grade`, null, {
+      .post(`https://learningtrackingsystem.up.railway.app/api/assignments/grade`, null, {
         params: { studentEmail: email, assignmentName, grade },
       })
       .then(() => {
