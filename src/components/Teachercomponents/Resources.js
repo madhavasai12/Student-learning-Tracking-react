@@ -14,7 +14,7 @@ const Resources = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/resources")
+      .get("https://learningtrackingsystem.up.railway.app/resources")
       .then((response) => setResources(response.data))
       .catch((error) => console.error("Error fetching resources:", error));
   }, []);
@@ -27,7 +27,7 @@ const Resources = () => {
   const handleAddResource = () => {
     if (newResource.topic) {
       axios
-        .post("http://localhost:8080/resources", newResource)
+        .post("https://learningtrackingsystem.up.railway.app/resources", newResource)
         .then((response) => {
           setResources([...resources, response.data]);
           setNewResource({
@@ -42,7 +42,7 @@ const Resources = () => {
 
   const handleDeleteResource = (id) => {
     axios
-      .delete(`http://localhost:8080/resources/${id}`)
+      .delete(`https://learningtrackingsystem.up.railway.app/resources/${id}`)
       .then(() => setResources(resources.filter((r) => r.id !== id)))
       .catch((error) => console.error("Error deleting resource:", error));
   };
