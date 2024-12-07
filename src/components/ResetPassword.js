@@ -32,7 +32,7 @@ const ResetPassword = () => {
 
     try {
       setIsSubmitting(true);
-      const response = await fetch('http://localhost:8080/reset-password', {
+      const response = await fetch('https://learningtrackingsystem.up.railway.app/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
