@@ -31,7 +31,7 @@ const Signup = () => {
         setError('');
 
         try {
-            const response = await axios.post('http://localhost:8080/user', {
+            const response = await axios.post('learningtrackingsystem.up.railway.app/user', {
                 name: formData.name,
                 email: formData.email,
                 password: formData.password,
