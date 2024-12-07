@@ -79,7 +79,7 @@ const SignIn = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:8080/signin', {
+            const response = await fetch('learningtrackingsystem.up.railway.app/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
