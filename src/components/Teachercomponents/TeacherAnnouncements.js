@@ -13,7 +13,7 @@ const TeacherAnnouncements = () => {
   useEffect(() => {
     // Fetch students from the backend to populate the dropdown
     axios
-      .get("http://localhost:8080/users") // Fetch all users from this endpoint
+      .get("https://learningtrackingsystem.up.railway.app/users") // Fetch all users from this endpoint
       .then((response) => {
         const studentUsers = response.data.filter((user) => user.role.toLowerCase() === "student");
         setStudents(studentUsers); // Set students data to the state
@@ -44,7 +44,7 @@ const TeacherAnnouncements = () => {
     data.append("recipientEmail", selectedEmail === "all" ? "all" : selectedEmail);
 
     axios
-      .post("http://localhost:8080/api/announcements", data) // Assuming you have this endpoint for posting announcements
+      .post("https://learningtrackingsystem.up.railway.app/api/announcements", data) // Assuming you have this endpoint for posting announcements
       .then(() => {
         setSuccessMessage("Announcement sent successfully!");
         setAnnouncementText(""); // Clear the form after submission
