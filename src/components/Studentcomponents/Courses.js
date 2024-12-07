@@ -14,7 +14,7 @@ const Courses = () => {
   // Fetch resources from the backend on component mount
   useEffect(() => {
     axios
-      .get("http://localhost:8080/resources")
+      .get("https://learningtrackingsystem.up.railway.app/resources")
       .then((response) => setResources(response.data))
       .catch((error) => console.error("Error fetching resources:", error));
   }, []);
