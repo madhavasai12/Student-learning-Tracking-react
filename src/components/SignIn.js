@@ -79,7 +79,7 @@ const SignIn = () => {
         }
 
         try {
-            const response = await fetch('learningtrackingsystem.up.railway.app/signin', {
+            const response = await fetch('https://madhava-student-learning-tracking.vercel.app/learningtrackingsystem.up.railway.app/signin', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
