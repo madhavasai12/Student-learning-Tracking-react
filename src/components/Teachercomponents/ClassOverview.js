@@ -15,7 +15,7 @@ const ClassOverview = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/users")
+      .get("https://learningtrackingsystem.up.railway.app/users")
       .then((response) => {
         const allUsers = response.data;
         const studentUsers = allUsers.filter(
