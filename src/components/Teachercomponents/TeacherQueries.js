@@ -13,7 +13,7 @@ const TeacherQueries = () => {
 
   const fetchQueries = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/queries/all");
+      const response = await fetch("https://learningtrackingsystem.up.railway.app/api/queries/all");
       if (!response.ok) {
         throw new Error("Failed to fetch queries.");
       }
@@ -32,7 +32,7 @@ const TeacherQueries = () => {
     }
     try {
       const response = await fetch(
-        `http://localhost:8080/api/queries/solution?queryId=${queryId}&solution=${encodeURIComponent(solution)}`,
+        `https://learningtrackingsystem.up.railway.app/api/queries/solution?queryId=${queryId}&solution=${encodeURIComponent(solution)}`,
         {
           method: "POST",
         }
