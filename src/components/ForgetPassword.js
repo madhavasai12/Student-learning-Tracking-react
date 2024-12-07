@@ -29,7 +29,7 @@ const ForgetPassword = () => {
   }
 
   try {
-    const response = await fetch('http://localhost:8080/forgot-password', {
+    const response = await fetch('https://learningtrackingsystem.up.railway.app/forgot-password', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
