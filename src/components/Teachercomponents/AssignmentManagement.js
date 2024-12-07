@@ -15,7 +15,7 @@ const AssignmentManagement = () => {
 
   const fetchAssignments = () => {
     axios
-      .get("http://localhost:8080/assignments")
+      .get("https://learningtrackingsystem.up.railway.app/assignments")
       .then((response) => setAssignments(response.data))
       .catch((error) => console.error("Error fetching assignments:", error));
   };
@@ -28,7 +28,7 @@ const AssignmentManagement = () => {
   const handleAddAssignment = () => {
     if (newAssignment.name && newAssignment.questions) {
       axios
-        .post("http://localhost:8080/assignments", newAssignment)
+        .post("https://learningtrackingsystem.up.railway.app/assignments", newAssignment)
         .then((response) => {
           setAssignments([...assignments, response.data]);
           setNewAssignment({ name: "", questions: "" });
@@ -45,7 +45,7 @@ const AssignmentManagement = () => {
 
   const handleDeleteAssignment = (id) => {
     axios
-      .delete(`http://localhost:8080/assignments/${id}`)
+      .delete(`https://learningtrackingsystem.up.railway.app/assignments/${id}`)
       .then(() => {
         setAssignments(assignments.filter((a) => a.id !== id));
         setStatusMessage("Assignment and related submissions deleted successfully.");
