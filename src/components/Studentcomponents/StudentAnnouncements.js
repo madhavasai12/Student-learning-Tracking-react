@@ -21,7 +21,7 @@ const StudentAnnouncements = () => {
 
   const fetchAnnouncements = (email) => {
     axios
-      .get(`http://localhost:8080/api/announcements/student/${email}`)
+      .get(`https://learningtrackingsystem.up.railway.app/api/announcements/student/${email}`)
       .then((response) => {
         setAnnouncements(response.data);
       })
