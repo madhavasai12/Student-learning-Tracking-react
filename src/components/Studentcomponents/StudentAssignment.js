@@ -32,8 +32,8 @@ const StudentAssignment = () => {
     const fetchAssignmentsAndSubmissions = async () => {
       try {
         const [assignmentsResponse, submissionsResponse] = await Promise.all([
-          axios.get("http://localhost:8080/assignments"),
-          axios.get(`http://localhost:8080/api/assignments/submissions?email=${userDetails.email}`),
+          axios.get("https://learningtrackingsystem.up.railway.app/assignments"),
+          axios.get(`https://learningtrackingsystem.up.railway.app/api/assignments/submissions?email=${userDetails.email}`),
         ]);
 
         const allAssignments = assignmentsResponse.data;
@@ -80,7 +80,7 @@ const StudentAssignment = () => {
     formData.append("file", file);
 
     axios
-      .post("http://localhost:8080/api/assignments/mark-done", formData, {
+      .post("https://learningtrackingsystem.up.railway.app/api/assignments/mark-done", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       })
       .then(() => {
